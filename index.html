@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 2 - Marina Jensen</title>
+	<meta charset="utf-8" />
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900" rel="stylesheet">
+	<link href="css/main.css" type="text/css" rel="stylesheet" />
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<div class="site-container">
+		<article>
+			<h1>Welcome To Your Site Inc.</h1>
+			<p>Lorem ipsum dolor sit amet, civibus adversarium vis ad, cibo dignissim intellegebat ut sit, labitur omittantur vix no. Id vis quas quodsi luptatum, cum te aeque neglegentur. Virtute petentium ne duo, vix ex etiam falli corpora, etiam reprehendunt mei no. In vel altera latine torquatos, ne convenire scripserit disputationi cum. </p>
+		</article>
+		<div class="inside-container">
+			<form id="first-form" novalidate="novalidate">
+				<div id="fieldsets">
+					<fieldset class="current">
+						<a class="btn first-change">Login</a>
+					</fieldset>
+					<fieldset class="next">
+						<label>
+							Username
+							<input type="text" name="username" required="required" id="username" />
+							<div class="errormessage">
+								You need to supply a username
+							</div>
+							<div class="not-existmessage">
+								This username do not exist
+							</div>
+						</label>
+						<label>
+							Password
+							<input id="password" type="password" name="password" required="required" />
+							<div class="errormessage">
+								Please enter a password
+							</div>
+							<div class="hidden-wrong">
+								<p>Something went wrong!</p>
+							</div>
+						</label>
+						<input type="submit" value="Login">
+						<a id="forgot" href="#">Forgot password</a>
+					</fieldset>
+					<fieldset class="next">
+						<h2>You're logged in!</h2>
+						<p>Now go ahead - you can access al the cool content we got on our site</p>
+						<a class="btn">Login</a>
+					</fieldset>
+				</div>
+			</form>
+			<div id="under">
+				<section class="first-section">
+					<p class="info">Enter your username below and we'll send an email to you</p>
+					<form novalidate="novalidate">
+						<label>
+							Username
+							<input id="username-pass" type="text" name="username" required="required" />
+							<div class="errormessage">
+								Please enter your username
+							</div>
+							<div class="not-existmessage">
+								This username do not exist
+							</div>
+						</label>
+						<input type="submit" name="get-password" value="Get password">
+					</form>
+				</section>
+				<section class="second-section">
+					<h2>Found it!</h2>
+					<p class="info">Go ahead and login! Lorem ipsum dolor sit amet, civibus adversarium vis ad, cibo dignissim intellegebat ut sit, labitur omittantur vix no. Id vis quas quodsi luptatum.</p>
+					<a href="#" id="back-link">Back to the login</a>
+				</section>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
